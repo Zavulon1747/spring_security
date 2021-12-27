@@ -18,7 +18,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
-        auth.jdbcAuthentication().dataSource(dataSource);
+        auth.jdbcAuthentication().dataSource(dataSource); //bcrypt and noop
 
 //        User.UserBuilder userBuilder = User.withDefaultPasswordEncoder(); //vremenno
 //
